@@ -10,7 +10,10 @@
 
     "modules-left": [
         "clock",
-        "hyprland/workspaces"
+	"custom/screenshot",
+	"custom/shutdown",
+	"custom/reboot",
+	"hyprland/workspaces"
     ],
 
     "modules-center": [
@@ -18,6 +21,7 @@
     ],
 
     "modules-right": [
+   
         "cpu_text",
         "cpu",
         "memory",
@@ -25,6 +29,25 @@
         "tray",
         "pulseaudio"
     ],
+
+
+    "custom/reboot":{
+
+        "format": "🔄",
+	"tooltip": "false",
+        "on-click": "reboot"
+
+    },
+
+
+    "custom/shutdown":{
+    
+        "format": "🔌",
+	"tooltip": "false",
+        "on-click": "poweroff"
+
+    },
+
 
     "sway/workspaces": {
         "disable-scroll": true,
@@ -87,3 +110,4 @@
         "tooltip": false
     }
 }
+
